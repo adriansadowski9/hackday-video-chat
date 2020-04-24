@@ -42,7 +42,7 @@ function createUserItemContainer(socketId) {
 
 async function callUser(socketId) {
   const offer = await peerConnection.createOffer();
-  await peerConnection.setLocalDescription((offer));
+  await peerConnection.setRemoteDescription((offer));
 
   socket.emit('call-user', {
     offer,
@@ -98,7 +98,7 @@ socket.on('call-made', async data => {
       (data.offer),
   );
   const answer = await peerConnection.createAnswer();
-  await peerConnection.setLocalDescription((answer));
+  await peerConnection.setRemoteDescription((answer));
 
   socket.emit('make-answer', {
     answer,
