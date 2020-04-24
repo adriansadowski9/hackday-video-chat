@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cea32e38-db40-450e-9388-c705c8c916fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +48,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1587712260972</updated>
-      <workItem from="1587712262547" duration="4999000" />
+      <workItem from="1587712262547" duration="5278000" />
     </task>
     <servers />
   </component>
@@ -53,9 +56,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2688" y="-147" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587712526058">
+    <state x="2688" y="-147" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587718129452">
       <screen x="1680" y="-485" width="2560" height="1057" />
     </state>
-    <state x="2688" y="-147" key="#com.intellij.fileTypes.FileTypeChooser/1680.-485.2560.1057/0.23.1680.958@1680.-485.2560.1057" timestamp="1587712526058" />
+    <state x="2688" y="-147" key="#com.intellij.fileTypes.FileTypeChooser/1680.-485.2560.1057/0.23.1680.958@1680.-485.2560.1057" timestamp="1587718129452" />
   </component>
 </project>
