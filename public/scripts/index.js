@@ -1,5 +1,3 @@
-require('dotenv').config()
-
 let isAlreadyCalling = false;
 let getCalled = false;
 
@@ -14,8 +12,8 @@ const peerConnection = new RTCPeerConnection({
     },
     {
       urls: 'turn:numb.viagenie.ca',
-      username: process.env.TURN_USERNAME,
-      credential: process.env.TURN_PASSWORD
+      username: 'luvisonx@gmail.com',
+      credential: 'TestHackday'
     }
   ]
 });

@@ -85,7 +85,6 @@ export class Server {
         });
       });
     });
-
   }
 
   public listen(callback: (port: number | string) => void): void {
