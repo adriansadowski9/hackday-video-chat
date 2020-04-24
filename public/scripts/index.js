@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 let isAlreadyCalling = false;
 let getCalled = false;
 
