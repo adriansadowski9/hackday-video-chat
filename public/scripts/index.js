@@ -9,6 +9,11 @@ const peerConnection = new RTCPeerConnection({
   iceServers: [
     {
       urls: 'stun:stun4.l.google.com:19302'
+    },
+    {
+      urls: 'turn:numb.viagenie.ca',
+      username: process.env.TURN_USERNAME,
+      credential: process.env.TURN_PASSWORD
     }
   ]
 });
