@@ -5,7 +5,13 @@ const existingCalls = [];
 
 const { RTCPeerConnection, RTCSessionDescription } = window;
 
-const peerConnection = new RTCPeerConnection();
+const peerConnection = new RTCPeerConnection({
+  iceServers: [
+    {
+      urls: 'stun:stun4.l.google.com:19302'
+    }
+  ]
+});
 
 function unselectUsersFromList() {
   const alreadySelectedUser = document.querySelectorAll(
@@ -42,7 +48,7 @@ function createUserItemContainer(socketId) {
 
 async function callUser(socketId) {
   const offer = await peerConnection.createOffer();
-  await peerConnection.setRemoteDescription(new RTCSessionDescription(offer));
+  await peerConnection.setLocalDescription(new RTCSessionDescription(offer));
 
   socket.emit("call-user", {
     offer,
@@ -98,7 +104,7 @@ socket.on("call-made", async data => {
     new RTCSessionDescription(data.offer)
   );
   const answer = await peerConnection.createAnswer();
-  await peerConnection.setRemoteDescription(new RTCSessionDescription(answer));
+  await peerConnection.setLocalDescription(new RTCSessionDescription(answer));
 
   socket.emit("make-answer", {
     answer,
